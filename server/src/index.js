@@ -94,6 +94,7 @@ app.use("*", (req, res) => {
   res.status(404).json({ error: "Route not found" });
 });
 
+console.log("Using MongoDB URI:", process.env.MONGODB_URI);
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
