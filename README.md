@@ -4,7 +4,7 @@ A modern web application that allows users to upload files and apply various dat
 
 ## 🚀 Live Demo
 
-**[View Live Application](https://datacompressiondecompression.netlify.app/)**
+**[View Live Application](https://beamish-selkie-049147.netlify.app/)**
 
 ## Features
 
@@ -44,53 +44,6 @@ A modern web application that allows users to upload files and apply various dat
 - **Environment**: Separate .env files for client and server
 - **Build Tool**: Vite for fast development and optimized builds
 
-## Project Structure
-
-```
-Data Compression Decompression/
-├── client/                          # React frontend
-│   ├── public/                      # Static assets
-│   ├── src/
-│   │   ├── components/              # Reusable components
-│   │   │   ├── CompressionResults.jsx
-│   │   │   ├── StatisticsChart.jsx
-│   │   │   └── Navbar.jsx
-│   │   ├── pages/                   # Page components
-│   │   │   ├── Home.jsx
-│   │   │   ├── AlgorithmDetail.jsx
-│   │   │   └── Algorithms.jsx
-│   │   ├── utils/                   # Utility functions
-│   │   │   └── api.js
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── index.css
-│   ├── index.html
-│   ├── package.json
-│   ├── vite.config.js
-│   ├── tailwind.config.js
-│   └── postcss.config.js
-├── server/                          # Node.js backend
-│   ├── uploads/                     # File storage directory
-│   ├── src/
-│   │   ├── algorithms/              # Compression algorithms
-│   │   │   ├── huffman.js
-│   │   │   ├── rle.js
-│   │   │   └── lz77.js
-│   │   ├── routes/                  # API routes
-│   │   │   ├── compression.js
-│   │   │   ├── files.js
-│   │   │   └── upload.js
-│   │   ├── models/                  # Database models
-│   │   │   └── File.js
-│   │   └── index.js                 # Main server file
-│   ├── package.json
-│   └── env.example
-├── test_files/                      # Test files for compression
-├── README.md
-├── setup.sh                         # Unix setup script
-└── setup.bat                        # Windows setup script
-```
-
 ## 🛠️ Setup Instructions
 
 ### Prerequisites
@@ -100,21 +53,9 @@ Data Compression Decompression/
 
 ### Quick Setup
 
-**Option 1: Using Setup Scripts (Recommended)**
-```bash
-# Unix/Mac/Linux
-chmod +x setup.sh
-./setup.sh
-
-# Windows
-setup.bat
-```
-
-**Option 2: Manual Setup**
-
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/tishaychandra/compression
    cd data-compression-decompression
    ```
 
@@ -258,18 +199,6 @@ setup.bat
    - `PORT=10000`
 3. Deploy as a web service
 
-### Environment Variables for Production
-```env
-# Server
-PORT=10000
-MONGODB_URI=your_mongodb_atlas_connection_string
-NODE_ENV=production
-MAX_FILE_SIZE=10485760
-
-# Client
-VITE_API_URL=https://your-backend-url.onrender.com
-```
-
 ## 🧪 Testing
 
 Test the application with different file types:
@@ -289,15 +218,3 @@ Test the application with different file types:
 ## 📝 License
 
 This project is licensed under the MIT License.
-
-## 📞 Support
-
-- **Issues**: Open an issue on GitHub
-- **Documentation**: Check the algorithm details in the app
-- **Demo**: [Live Application](https://datacompressiondecompression.netlify.app/)
-
-## 🔗 Links
-
-- **Live Demo**: [https://datacompressiondecompression.netlify.app/](https://datacompressiondecompression.netlify.app/)
-- **Backend API**: [https://data-compression-decompression.onrender.com](https://data-compression-decompression.onrender.com)
-- **GitHub Repository**: [Your Repository URL] 
