@@ -22,8 +22,7 @@ const PORT = process.env.PORT || 5000;
 // ✅ Add your allowed frontend origins here
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://datacompressiondecompression.netlify.app",
-  "https://beamish-selkie-049147.netlify.app",
+  "https://beamish-selkie-049147.netlify.app"
 ];
 
 // ✅ CORS middleware
